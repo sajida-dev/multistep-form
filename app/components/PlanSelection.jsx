@@ -28,7 +28,7 @@ export default function PlanSelection({ data, updateField, nextStep, prevStep })
                             key={plan.key}
                             onClick={() => updateField('planOption', plan.key)}
                             className={`flex-1 border rounded-md p-6 cursor-pointer hover:border-blue-900 transition-all duration-200 
-                            ${selected ? 'bg-gray-50 border-blue-900' : 'border-gray-300'}`}
+                            ${selected ? 'bg-blue-50 border-blue-900' : 'border-gray-300'}`}
                         >
                             {planIcons[plan.key]}
                             <h4 className="font-semibold text-gray-800">{plan.label}</h4>
@@ -42,7 +42,7 @@ export default function PlanSelection({ data, updateField, nextStep, prevStep })
                     onClick={() => updateField('planType', 'monthly')}
                     className={`px-4 ${data.planType === 'monthly' ? 'text-white rounded p-2 mx-2 bg-blue-900' : 'text-gray-700'}`}
                 >Monthly</button>
-                <div className="flex-1 h-7 relative mx-44 bg-white rounded-full p-0.5">
+                <div className="flex-1 h-7 relative lg:mx-44 mx-5 bg-white rounded-full p-0.5">
                     <div
                         className={`w-1/2  h-full bg-blue-900 rounded-full transition-all duration-300 
               ${data.planType === 'yearly' ? 'translate-x-full' : 'translate-x-0'}`}

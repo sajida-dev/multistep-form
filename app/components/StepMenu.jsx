@@ -10,7 +10,7 @@ const steps = [
 
 export default function StepMenu({ currentStep }) {
     return (
-        <nav aria-label="Progress" className="space-y-6 flex md:flex-col justify-center">
+        <nav aria-label="Progress" className="space-y-6 my-9 mx-5 flex md:flex-col justify-center">
             {steps.map((s, idx) => {
                 const stepNum = idx + 1;
                 const isActive = currentStep === stepNum;
